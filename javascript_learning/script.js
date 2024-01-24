@@ -17,3 +17,11 @@
 // let str = "My number is (123) 456-7890 and your number is 123-456-7890.";
 // let replacement = "***REMOVED***";
 // console.log(replaceNA(str, replacement));
+
+
+let passwordStr = "";
+function checkStrength(str){
+    let regex = //;
+    return (regex.test(str)) ? "Strong Password!": "Weak Password!!";
+}
+console.log(checkStrength("1A2dasd!"));
