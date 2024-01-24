@@ -1,3 +1,4 @@
 # git_test
 
-Hello Odin!
+Hello Odin! 
+The tutorial is very helpful! Thanks!
