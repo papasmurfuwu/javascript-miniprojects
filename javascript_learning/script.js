@@ -19,9 +19,10 @@
 // console.log(replaceNA(str, replacement));
 
 
-let passwordStr = "";
+let passwordStr = "Password1!";
 function checkStrength(str){
-    let regex = //;
+    // (?=) --> 
+    let regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*()])(?=.{8,})/;
     return (regex.test(str)) ? "Strong Password!": "Weak Password!!";
 }
 console.log(checkStrength("1A2dasd!"));
