@@ -1,14 +1,45 @@
 // 1. Validate Email Address
-let userEmail = prompt("Please enter your full email address.");
-let regexEmail = /\w+\@connect\.ust\.hk/;
-(regexEmail.test(userEmail)) ? alert("Valid email~"): alert("Invalid format!");
+let validEmails = [
+    "john_doe@example.com",
+    "jane123@domain.net",
+    "user_test@youmail.org",
+    "test_email@mydomain.edu",
+    "alpha_numeric123@testing.co.uk"
+  ];
+  let invalidEmails = [
+    "missingat.com",
+    "@missingusername.com",
+    "missingdomain@.com",
+    "invalid_extension@domain.c",
+    "too_long_extension@domain.abcdefg"
+  ];
+function validateEmail(arr){
+    // ([.-]?[a-zA-Z0-9]+)* <-- code above takes any number of preceding domain extensions  
+    let regexEmail = /^[\w\d]+@[\w\d]+([.-]?[a-zA-Z0-9]+)*\.[a-zA-Z]{2,6}$/; 
+    return arr.map(email => regexEmail.test(email));
+}
+
+console.log(validateEmail(validEmails));
+console.log(validateEmail(invalidEmails));
 
 
 // 2. Extract dates 
-MM-DD-YYYY | MM/DD/YYYY,  1900 - 2099
-let dateString = "";
-let regexDate = /\b(0?[1-9]|1[0-2])[-\/](0?[1-9]|[12][0-9]|3[01])[-\/](19|20)\d{2}/g;
-console.log(regexDate.test(dateString));
+// MM-DD-YYYY | MM/DD/YYYY,  1900 - 2099
+let strDates = "This is Tom's birthday: 08-31-2004, and Mary's on 08/16/2004."
+function getDates(str){
+    let regexDates = /(0*[1-9]|1[0-2])[\/-](0*[1-9]|[12][0-9]|[3][0-1])[\/-](19[0-9][0-9]|20[0-9][0-9])/g;
+    let matches = str.match(regexDates);
+    if(matches){
+        // for(i = 0; i < matches.length; i++){
+        //     matches[i] = matches[i].replace(/\//g, '-')
+        // }
+        // return matches;
+        return matches.map(date => date.replace(/\//g,'-'));
+    } else {
+        return "No date matches found in string."
+    }
+}
+console.log(getDates(strDates));
 
 
 // 3. Replace Phone Numbers (NA)
