@@ -24,10 +24,22 @@ console.log(validateEmail(invalidEmails));
 
 
 // 2. Extract dates 
-MM-DD-YYYY | MM/DD/YYYY,  1900 - 2099
-let dateString = "";
-let regexDate = /\b(0?[1-9]|1[0-2])[-\/](0?[1-9]|[12][0-9]|3[01])[-\/](19|20)\d{2}/g;
-console.log(regexDate.test(dateString));
+// MM-DD-YYYY | MM/DD/YYYY,  1900 - 2099
+let strDates = "This is Tom's birthday: 08-31-2004, and Mary's on 08/16/2004."
+function getDates(str){
+    let regexDates = /(0*[1-9]|1[0-2])[\/-](0*[1-9]|[12][0-9]|[3][0-1])[\/-](19[0-9][0-9]|20[0-9][0-9])/g;
+    let matches = str.match(regexDates);
+    if(matches){
+        // for(i = 0; i < matches.length; i++){
+        //     matches[i] = matches[i].replace(/\//g, '-')
+        // }
+        // return matches;
+        return matches.map(date => date.replace(/\//g,'-'));
+    } else {
+        return "No date matches found in string."
+    }
+}
+console.log(getDates(strDates));
 
 
 // 3. Replace Phone Numbers (NA)
