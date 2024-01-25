@@ -1,7 +1,26 @@
 // 1. Validate Email Address
-let userEmail = prompt("Please enter your full email address.");
-let regexEmail = /\w+\@connect\.ust\.hk/;
-(regexEmail.test(userEmail)) ? alert("Valid email~"): alert("Invalid format!");
+let validEmails = [
+    "john_doe@example.com",
+    "jane123@domain.net",
+    "user_test@youmail.org",
+    "test_email@mydomain.edu",
+    "alpha_numeric123@testing.co.uk"
+  ];
+  let invalidEmails = [
+    "missingat.com",
+    "@missingusername.com",
+    "missingdomain@.com",
+    "invalid_extension@domain.c",
+    "too_long_extension@domain.abcdefg"
+  ];
+function validateEmail(arr){
+    // ([.-]?[a-zA-Z0-9]+)* <-- code above takes any number of preceding domain extensions  
+    let regexEmail = /^[\w\d]+@[\w\d]+([.-]?[a-zA-Z0-9]+)*\.[a-zA-Z]{2,6}$/; 
+    return arr.map(email => regexEmail.test(email));
+}
+
+console.log(validateEmail(validEmails));
+console.log(validateEmail(invalidEmails));
 
 
 // 2. Extract dates 
