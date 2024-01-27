@@ -8,27 +8,27 @@
     </head>
     <body>
         <div id="container">
-            <div id="display">
-                <p id="numDisplay"></p>
+            <div id="displayDiv">
+                <input id="display" readonly></input>
             </div>
-            <div id="buttons">
-                <button class="opButtons">+</button>
-                <button class="numButtons">7</button>
-                <button class="numButtons">8</button>
-                <button class="numButtons">9</button>
-                <button class="opButtons">-</button>
-                <button class="numButtons">4</button>
-                <button class="numButtons">5</button>
-                <button class="numButtons">6</button>
-                <button class="opButtons">*</button>
-                <button class="numButtons">1</button>
-                <button class="numButtons">2</button>
-                <button class="numButtons">3</button>
-                <button class="opButtons">/</button>
-                <button class="numButtons">0</button>
-                <button class="numButtons">.</button>
-                <button class="numButtons">=</button>
-                <button class="opButtons">C</button>
+            <div id="buttonsDiv">
+                <button onclick="appendToDisplay('+')" class="opButtons">+</button>
+                <button onclick="appendToDisplay('7')" class="numButtons">7</button>
+                <button onclick="appendToDisplay('8')" class="numButtons">8</button>
+                <button onclick="appendToDisplay('9')" class="numButtons">9</button>
+                <button onclick="appendToDisplay('-')" class="opButtons">-</button>
+                <button onclick="appendToDisplay('4')" class="numButtons">4</button> 
+                <button onclick="appendToDisplay('5')" class="numButtons">5</button>
+                <button onclick="appendToDisplay('6')" class="numButtons">6</button>
+                <button onclick="appendToDisplay('*')" class="opButtons">*</button>
+                <button onclick="appendToDisplay('1')" class="numButtons">1</button>
+                <button onclick="appendToDisplay('2')" class="numButtons">2</button>
+                <button onclick="appendToDisplay('3')" class="numButtons">3</button>
+                <button onclick="appendToDisplay('/')" class="opButtons">/</button>
+                <button onclick="appendToDisplay('0')" class="numButtons">0</button>
+                <button onclick="appendToDisplay('.')" class="numButtons">.</button>
+                <button onclick="calculate()" class="numButtons">=</button>
+                <button onclick="clearDisplay()" class="opButtons">C</button>
             </div>
         </div>
     <script src="script.js"></script>
