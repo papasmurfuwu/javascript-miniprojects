@@ -7,11 +7,13 @@ function addParagraph(){
     let userInput = document.getElementById("taskInput");
     let addItemButton = document.getElementById("addItem");
     let clearListButton = document.getElementById("clearList");
+    let copyItemsButton = document.getElementById("copyItems");
     let taskContainer = document.getElementById("taskContainer");
 
     addItemButton.addEventListener("click", function(){
         let paragraph =  document.createElement("p");
         if (userInput.value !== ""){
+            paragraph.classList.add("listItem");
             paragraph.textContent = userInput.value;
             taskContainer.appendChild(paragraph);
             userInput.value = "";
@@ -29,8 +31,17 @@ function addParagraph(){
                 taskContainer.removeChild(taskContainer.lastChild);
             }
         })
-    })
-    
+        copyItemsButton.addEventListener("click", function(){
+            if (!taskContainer.firstChild) return; 
+            let textToCopy = Array.from(document.getElementsByClassName("listItem"))
+                                .map(item => item.textContent)
+                                .join('\n');
+            // Copy the text 
+            navigator.clipboard.writeText(textToCopy)
+                .then(function(){console.log("Copied items!")})
+                .catch(() => console.error("Could not copy text: "));
+        })
+    }) 
 }
 
 
