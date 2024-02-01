@@ -1,4 +1,1 @@
-# git_test
-
-Hello Odin! 
-The tutorial is very helpful! Thanks!
+This repository contains simple javascript projects inspired by the video in the following url (https://youtu.be/roumzWd4XJU?si=2WNpisp9w0nZ7yYX)
