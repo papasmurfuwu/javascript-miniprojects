@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Expense Tracker</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="headings">
+                <h1>Expense Tracker</h1>
+                <h3 style="color: rgb(1, 204, 1)">Add A New Item:</h3>
+            </div>
+            <div id="expense-input">
+                <form>
+                    <div class="flex-item-big">
+                        <label>Name: </label>
+                        <input 
+                            type="text"
+                            placeholder="Where was the expense made?">
+                    </div>
+                    <div class="flex-item-small">
+                        <label>Date: </label>
+                        <input type="text">
+                    </div>
+                    <div class="flex-item-small">
+                        <label>Amount: </label>
+                        <input type="text">
+                    </div> 
+                </form>
+            </div>
+            <button id="add-expense-button">Add Expense</button>
+            <div id="expense-table">
+                <table border="1">
+                    <tr align="left">
+                        <td style="width: 50%">Name</td>
+                        <td style="width: 25%">Date</td>
+                        <td style="width: 25%">Amount</td>
+                    </tr>
+                    <tr align="left">
+                        <td colspan="3">No expense added yet!</td>
+                    </tr>
+                </table>
+            </div>      
+        </div>
+    </body>
+</html>
+
+<!-- Structure: 
+input: expense name, amount, date
+list of expenses using TABLE-->
+<!-- Trouble: don't know how to equally divide div in expense-input -->
