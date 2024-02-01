@@ -14,25 +14,30 @@
             </div>
             <div id="expense-input">
                 <form>
-                    <div class="flex-item-big">
-                        <label>Name: </label>
+                    <div>
+                        <label>Name:</label>
                         <input 
                             type="text"
+                            class="big-input" 
                             placeholder="Where was the expense made?">
                     </div>
-                    <div class="flex-item-small">
-                        <label>Date: </label>
-                        <input type="text">
-                    </div>
-                    <div class="flex-item-small">
-                        <label>Amount: </label>
-                        <input type="text">
+                    <div>
+                        <label>Date:</label>
+                        <input 
+                            type="text"
+                            class="small-input"
+                            autocomplete="off">
+                        <label>Amount:</label>
+                        <input 
+                            type="text"
+                            class="small-input"
+                            autocomplete="off">
                     </div> 
                 </form>
             </div>
             <button id="add-expense-button">Add Expense</button>
             <div id="expense-table">
-                <table border="1">
+                <table class="expense-table">
                     <tr align="left">
                         <td style="width: 50%">Name</td>
                         <td style="width: 25%">Date</td>
