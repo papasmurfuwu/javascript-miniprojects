@@ -25,9 +25,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 90%;
     font-size: 18px;
-    flex-wrap: wrap;
     margin: 5px 0px;
 }
 
@@ -35,7 +34,6 @@
     display: flex;
     align-items: center;
     margin: 10px 0px; 
-    height: 30%;
 }
 
 #expense-input label{
@@ -52,11 +50,12 @@ form {
 
 .big-input {
     flex-grow: 2;
-    
+    height: 40%;
 }
 
 .small-input {
     flex-grow: 1;
+    height: 40%;
 }
 
 input {
