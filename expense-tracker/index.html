@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Expense Tracker</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <div id="container">
@@ -18,37 +19,49 @@
                         <label>Name:</label>
                         <input 
                             type="text"
+                            id="name-input"
                             class="big-input" 
+                            autocomplete="off"
                             placeholder="Where was the expense made?">
                     </div>
                     <div>
                         <label>Date:</label>
                         <input 
                             type="date"
+                            id="date-input"
                             class="small-input"
                             autocomplete="off">
                         <label>Amount:</label>
                         <input 
                             type="text"
+                            id="amount-input"
                             class="small-input"
                             autocomplete="off">
                     </div> 
                 </form>
             </div>
             <button id="add-expense-button">Add Expense</button>
-            <div id="expense-table">
-                <table class="expense-table">
+            <div id="expense-table-div">
+                <table id="expense-table">
                     <tr align="left">
-                        <td style="width: 50%">Name</td>
+                        <td style="width: 35%">Name</td>
                         <td style="width: 25%">Date</td>
                         <td style="width: 25%">Amount</td>
+                        <td style="width: 10%"></td>
                     </tr>
-                    <tr align="left">
-                        <td id="no-expense-msg" colspan="3">No expense added yet!</td>
+                    <tr class="expense-items"
+                        align="left">
+                        <td id="no-expense-msg" 
+                            colspan="3"
+                            style="border:none"
+                            >No expense added yet!</td>
                     </tr>
                 </table>
-            </div>      
+            </div> 
+            <!-- <footer>
+            </footer>      -->
         </div>
+    <script src="script.js"></script>
     </body>
 </html>
 

@@ -7,6 +7,7 @@
     flex-direction: column;
     align-items: center;
     height: 100vh;
+    margin: 10px 0px 10px 0px;
 }
 
 /* Font for everything other than headings (the "headings" div)  */
@@ -18,14 +19,14 @@
 #headings {
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    margin-top: 5%;
+    /* margin-top: 5%; */
 }
 
 #expense-input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 50%;
     font-size: 18px;
     margin: 5px 0px;
 }
@@ -77,20 +78,26 @@ input {
     transition-duration: 0.25s;
 }
 
-#expense-table {
+#expense-table-div {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 50%;
     font-size: 18px;
     flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
-.expense-table, 
-.expense-table tr,
-.expense-table td {
-    border: 1px solid 
+#expense-table, 
+#expense-table tr,
+#expense-table td {
+    border: 1px solid;
+    border-collapse: collapse;
 }
 
+td {
+    height: 30px;
+    font-size: 14px;
+}
 #add-expense-button {
     margin: 25px 0px;
 }
@@ -98,3 +105,20 @@ input {
 td {
     padding-left: 5px;
 }
+
+.delete-button {
+    height: 24px;
+    width: 24px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+}
+
+.delete-button:hover {
+    background-color: rgba(255, 0, 0, 0.678);
+    transition: 0.25s all;
+}
+
+/* footer {
+    position: absolute;
+} */
