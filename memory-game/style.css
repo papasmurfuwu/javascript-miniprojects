@@ -1,0 +1,26 @@
+/* img {
+    width: 200px;
+    height: auto;
+} same code as below*/
+
+#images {
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
+}
+
+#images img {
+    width: 200px;
+    height: auto;
+    /* flex: 0 0 33.33%; Three items per row */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+#scores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+
+}
