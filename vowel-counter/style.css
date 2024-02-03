@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&family=Roboto:wght@300&family=Titillium+Web:wght@700;900&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-ser;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+#user-input {
+    width: 60%;
+    margin-bottom: 2em;
+    outline: none;
+    padding: 5px;
+    
+}
+#check-button {
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+#check-button:hover{
+    background-color: rgb(139, 139, 139);
+    transition-duration: 0.25s;
+}
