@@ -53,6 +53,7 @@ function addExpense(){
         let cell2 = row.insertCell(1);
         cell2.innerHTML = formattedDate;
         let cell3 = row.insertCell(2);
+        cell3.classList.add("amount-column");
         cell3.innerHTML = `$${amountInput.value}`;
 
         // adding button and cross icon 

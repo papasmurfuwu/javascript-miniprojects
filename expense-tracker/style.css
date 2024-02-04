@@ -1,6 +1,7 @@
 /* Imported Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
 #container {
     display: flex;
@@ -71,6 +72,7 @@ input {
     color: rgb(248, 248, 248);
     border-radius: 3px;
     padding: 10px;
+    margin: 25px 0px;
 }
 
 #add-expense-button:hover {
@@ -90,8 +92,13 @@ input {
 #expense-table, 
 #expense-table tr,
 #expense-table td {
-    border: 1px solid;
+    border: 1px solid lightgrey;
     border-collapse: collapse; 
+}
+
+.amount-column {
+    text-align: right;
+    padding-right: 5px;
 }
 
 td {
@@ -99,10 +106,6 @@ td {
     font-size: 14px;
     vertical-align: middle;
     padding-left: 5px;
-}
-
-#add-expense-button {
-    margin: 25px 0px;
 }
 
 .delete-button {
