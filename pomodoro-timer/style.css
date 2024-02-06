@@ -20,7 +20,6 @@
 
 #timer-container {
     /* border: 1px solid black; */
-    
 }
 
 #timer {
@@ -51,7 +50,12 @@
     padding: 5px;
     width: 9em;
     border-radius: 12px;
-    background-color: rgb(163, 144, 144);
+    background-color: rgb(245, 174, 174);
     border: none;
-    box-shadow:rgb(163, 144, 144);
+    box-shadow:rgb(221, 159, 159);
+}
+
+.start-button:hover{
+    background-color: rgb(255, 219, 219);
+    transition-duration: 0.5s;
 }
