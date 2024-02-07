@@ -1,12 +1,18 @@
 
 let startButton = document.getElementsByClassName('start-button')[0];
 let timerRunning = false; // This is a flag variable
+let quote = document.getElementById('quote');
+
+quote.style.visibility = 'hidden';
 
 startButton.addEventListener('click', function(){
     if (timerRunning){
         console.log("You thought fool")
         return; // If timer is running, don't start 
     }
+
+    // initialize minutes and seconds variables! 
+    quote.style.visibility = 'visible';
     const startingMinutes = 25;
     let time = startingMinutes * 60;
 

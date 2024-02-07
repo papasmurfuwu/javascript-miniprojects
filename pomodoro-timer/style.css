@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: 35%; /* Adjust this value to move the div up or down */
+    top: 40%; /* Adjust this value to move the div up or down */
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -38,11 +38,31 @@
     font-size: 2em;
 }
 
+#record {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    font-weight: 600;
+    color: rgb(46, 45, 45);
+}
+
+#cycle {
+    /* justify-content: flex-start; */
+    flex-grow: 8;
+    margin-left: 5px;
+}
+
+#round {
+    flex-grow: 1;
+    margin-right: 5px;
+}
+
 #button {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2em;
+    margin-top: 0em;
 }
 
 .start-button {
@@ -58,4 +78,13 @@
 .start-button:hover{
     background-color: rgb(255, 219, 219);
     transition-duration: 0.5s;
+}
+
+.start-button:active{
+    background-color: rgb(245, 174, 174);
+}
+
+#quote {
+    font-weight: 800;
+    margin-top: 0.75em;
 }
