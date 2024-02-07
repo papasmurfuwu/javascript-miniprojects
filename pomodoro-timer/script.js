@@ -2,7 +2,10 @@
 let startButton = document.getElementsByClassName('start-button')[0];
 let timerRunning = false; // This is a flag variable
 let quote = document.getElementById('quote');
+let cycleCounter = document.querySelector("#cycle span");
+let roundCounter = document.querySelector("#round span");
 
+// quote display 
 quote.style.visibility = 'hidden';
 
 startButton.addEventListener('click', function(){

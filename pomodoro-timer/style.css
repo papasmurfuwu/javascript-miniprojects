@@ -22,7 +22,7 @@
     /* border: 1px solid black; */
 }
 
-#timer {
+#timer-background {
     border: 2px solid rgb(54, 54, 54);
     padding: 5em;
     border-radius: 50%;
@@ -70,13 +70,13 @@
     padding: 5px;
     width: 9em;
     border-radius: 12px;
-    background-color: rgb(245, 174, 174);
+    background-color: rgb(255, 192, 192);
     border: none;
     box-shadow:rgb(221, 159, 159);
 }
 
 .start-button:hover{
-    background-color: rgb(255, 219, 219);
+    background-color: rgb(252, 229, 229);
     transition-duration: 0.5s;
 }
 
