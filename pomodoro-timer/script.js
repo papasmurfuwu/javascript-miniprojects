@@ -43,3 +43,12 @@ startButton.addEventListener('click', function(){
         }
     }
 })
+
+// swtich state to rest mode when timer ends (automatically add timer for 5 mins)
+// if cycle n #4 --> 30 mins rest 
+
+// in code: 1. create new page for rest
+//          2. use javascript turn page 
+
+// timer: add roundCount variable for every round 
+// cycle: same thing but once every four times 
