@@ -1,11 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+body {
+    height: 100vh;
+}
+
 * {
     font-family: 'Montserrat', sans-serif;
+}
+
+#nav-bar {
+    
 }
 
 #container {
     display: flex;
     flex-direction: column;
-    ;
+    height: 100vh;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 0.75em;
+}
+
+#nav-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+#form-container {
+    flex: 10;
+    margin: 0px 10% 0px 10%;
+}
+
+#form-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    height: 100%;
+   
+}
+
+#login-container {
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border: 0.5px solid rgb(175, 175, 175);
+    height: 100%;
+    /* padding: 10px 30px 30px 30px; */
+    /* justify-content: flex-start; */
+}
+
+#login-container > p:nth-child(-n + 2) {
+    text-align: center;
+    font-weight: 600;
+}
+
+#login-container > p:first-child {
+    margin: 20px 0px 0px 0px;
+}
+
+#login-container > p:nth-child(2) {
+    margin: 5px 0px 10px 0px;
+    font-size: 0.75em;
+}
+
+#login-form { 
+    padding: 0px 20px 0px 20px;
+    font-size: 10px;
+    /* flex-grow: 1; */
+}
+
+#login-form > p  {
+    margin-top: 5px;
+    font-size: 0.75em;
+    text-align: left;
+}
+
+#login-form > input {
+    width: 100%;
+}
+#forgot-password > a {
+    text-decoration: none;
+}
+#footer {
+    display: flex;
+    align-items: center;
+    flex: 1;
 }
