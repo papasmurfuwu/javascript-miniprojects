@@ -1,1 +1,5 @@
-This repository contains simple javascript projects mentioned by the video from the following url (https://youtu.be/roumzWd4XJU?si=2WNpisp9w0nZ7yYX)
+This repository contains a few original JavaScript projects as well as some projects inspired by the video from the following URL: https://youtu.be/roumzWd4XJU
+
+
+
+
